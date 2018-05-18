@@ -1,0 +1,93 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+/* Variables */
+:root {
+    --light-green: rgb(142, 255, 210);
+}
+
+/* Showcase */
+.container {
+    background: url(../img/showcase.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+/* Navigation */
+.main-nav, .main-contacto {
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 1px 2px 9px 1px #000;
+}
+
+.main-li {
+    color: #fff;
+    font-size: 3rem;
+    font-family: "Ubuntu", sans-serif;
+    letter-spacing: -0.2rem;
+    cursor: pointer;
+}
+
+.main-li:hover {
+    background: rgba(0, 0, 0, 0.8);
+    transition: 100ms ease-in-out;
+}
+
+/* Contacto */
+.main-contacto {
+    font-size: 5rem;
+}
+
+.social {
+    color: #fff;
+    cursor: pointer;
+} 
+/* Seguramente lo cambie cuando sepa qué agregar a whatsapp y email */
+
+.social:hover {
+    font-size: 4rem;
+    transition: 100ms ease-in-out;
+}
+
+.instagram:hover {
+    color: #cf86ff;
+}
+
+.facebook:hover {
+    color: #6c9aff;
+}
+
+.whatsapp:hover {
+    color: #56ff94;
+}
+
+.email:hover {
+    color: #ff7366;
+}
+
+/* Media queries */
+@media screen and (max-width: 1652px) {
+    .main-contacto {
+        font-size: 3.7rem;
+    }
+}
+
+@media screen and (max-width: 1322px) {
+    .main-contacto {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 848px) {
+    /* MOBILE! */
+    /* CONTACTO ES VERTICAL */
+}
+
+@media screen and (max-width: 476px) {
+    .main-li {
+        font-size: 2.3rem;
+    }
+}

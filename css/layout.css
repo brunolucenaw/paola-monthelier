@@ -1,0 +1,171 @@
+/* Showcase */
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    z-index: 1;
+}
+
+/* Navigation */
+.main-nav {
+    width: 272px;
+    height: 238px;
+    padding-top: 4.4rem;
+    position: relative;
+    top: -3.6rem;
+    text-align: center;
+    transition: 400ms ease-in-out;
+}
+
+.main-li {
+    padding: 2rem;
+}
+
+/* Portfolio */
+
+/* Contacto */
+.main-contacto {
+    width: 20%;
+    height: 12%;
+    padding: 1.2rem;
+    position: relative;
+    align-items: center;
+    transition: 300ms ease-in-out;
+}
+
+#main-contacto-left {
+    justify-content: flex-start;
+    right: -1rem;
+    padding-right: 2rem;
+}
+
+#main-contacto-right {
+    justify-content: flex-end;
+    left: -1rem;
+    padding-left: 2rem;
+}
+
+.social {
+    margin: 0 15%;
+}
+
+.instagram:hover {
+    margin-left: 10%;
+}
+
+.facebook:hover {
+    margin-left: 10%;
+}
+
+.whatsapp:hover {
+    margin-right: 10%;
+}
+
+.email:hover {
+    margin-right: 10%;
+}
+
+/* Ocultos */
+.main-nav-oculto {
+    height: 0;
+    top: -20rem;
+    padding-top: 0;
+    transition: 400ms ease-in-out;
+}
+
+.main-contacto-left-oculto {
+    width: 0;
+    height: 12%;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    transition: 300ms ease-in-out;
+}
+
+.main-contacto-right-oculto {
+    width: 0;
+    height: 12%;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    transition: 300ms ease-in-out;
+}
+
+.social-oculto {
+    display: none;
+}
+
+/* Media queries */
+@media screen and (max-width: 1322px) {
+    .main-contacto {
+        padding: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 1128px) {
+    .main-contacto {
+        height: 10%;
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 848px) {
+    /* MOBILE! */
+    /* CONTACTO ES VERTICAL */
+    .main-contacto {
+        width: 15rem;
+        height: 16%;
+    }
+
+    #main-contacto-left {
+        right: 0;
+        padding: 0;
+        padding-bottom: 1.6rem;
+        bottom: -2.9rem;
+        justify-content: center;
+    }
+
+    #main-contacto-right {
+        left: 0;
+        padding: 0;
+        padding-top: 1.6rem;
+        top: -2.9rem;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 476px) {
+    .main-nav {
+        width: 11rem;
+        height: 12rem;
+    }
+
+    .main-li {
+        padding: 1.3rem;
+    }
+
+    .logo {
+        width: 225px;
+        height: 225px;
+    }
+
+    /* Contacto */
+    .main-contacto {
+        width: 11rem;
+    }
+
+    .social {
+        margin: 0 10%;
+    }
+
+    /* Ocultos */
+    .main-nav-oculto {
+        height: 0;
+        top: -8rem;
+    }
+}
