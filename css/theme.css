@@ -14,7 +14,9 @@
 }
 
 .logo {
+    opacity: 1;
     cursor: pointer;
+    transition: 300ms ease-in-out;
 }
 
 /* Navigation */
@@ -37,6 +39,10 @@
 }
 
 /* Portfolio */
+
+.main-portfolio {
+    transition: 300ms ease-in-out;
+}
 
 .portfolio-box {
     background: salmon;

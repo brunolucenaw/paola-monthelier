@@ -8,7 +8,9 @@
 }
 
 .logo {
+    height: 400px;
     z-index: 1;
+    transition: 200ms ease-in-out;
 }
 
 /* Navigation */
@@ -29,6 +31,7 @@
 /* Portfolio */
 
 .main-portfolio {
+    opacity: 0;
     width: 98%;
     height: 95%;
     padding: 1.6rem;
@@ -37,10 +40,10 @@
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 8px;
     box-sizing: border-box;
+    transition: 300ms ease-in-out;
 }
 
 .portfolio-logo {
-    padding: 1.2rem;
     grid-column: 3 / 5;
     grid-row: 2 / 4;
     justify-self: center;
@@ -117,6 +120,7 @@
     height: 0;
     top: -20rem;
     padding-top: 0;
+    box-shadow: none;
     transition: 400ms ease-in-out;
 }
 
@@ -126,7 +130,7 @@
 
 .main-contacto-left-oculto {
     width: 0;
-    height: 12%;
+    height: 0;
     position: relative;
     justify-content: space-around;
     align-items: center;
@@ -135,7 +139,7 @@
 
 .main-contacto-right-oculto {
     width: 0;
-    height: 12%;
+    height: 0;
     position: relative;
     justify-content: space-around;
     align-items: center;

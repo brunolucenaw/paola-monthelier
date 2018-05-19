@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("container");
-    const contacto = document.getElementById("contacto");
+    const contactoLi = document.getElementById("contacto");
     const mainNav = document.getElementById("main-nav");
     const mainLiList = Array.from(document.getElementsByClassName("main-li"));
 
@@ -13,8 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function retraerMainMav() {
-        mainNav.classList += " main-nav-oculto";
+        mainNav.classList.add("main-nav-oculto");
         setTimeout(() => mainLiList.forEach(li => removerElemento(li)), 200);
+        setTimeout(() => mainNav.classList.remove("main-nav"), 400);
     }
 
     function expandirContacto() {
@@ -31,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // retraer main-nav y expandir
-    contacto.addEventListener("click", () => {
+    contactoLi.addEventListener("click", () => {
         retraerMainMav();
         setTimeout(() => {
             removerElemento(mainNav);
@@ -45,9 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("resize", () => {
         if (window.matchMedia("(max-width: 848px)").matches) {
             container.style.flexDirection = "column";
-        } else {
-            container.style.flexDirection = "row";
         }
+        // else {
+        //     container.style.flexDirection = "row";
+        // } rompe el main-nav
     });
 
     // mostrar whatsapp y email
