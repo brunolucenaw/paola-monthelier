@@ -20,7 +20,7 @@
 }
 
 /* Navigation */
-.main-nav, .main-contacto, .main-portfolio {
+.main-nav, .main-contact, .main-portfolio {
     background: rgba(0, 0, 0, 0.6);
     box-shadow: 1px 2px 9px 1px #000;
 }
@@ -45,65 +45,149 @@
 }
 
 .portfolio-box {
-    background: salmon;
+    background-size: cover;
+    background-position: center;
     box-shadow: 1px 2px 9px 1px #000;
+    cursor: pointer;
+    opacity: 0.9;
 }
 
 .portfolio-box:hover {
-    background: cyan;
-    box-shadow: none;
+    opacity: 1.2;
 }
 
-/* Contacto */
-.main-contacto {
+.portfolio-logo {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid #000;
+    border-radius: 3%;
+    box-shadow: inset 0 0 60px 10px #111;
+}
+
+.portfolio-box-fullscreen {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.box1 {
+    background: url(../img/portfolio/work1-min.png) no-repeat;
+}
+
+.box2 {
+    background: url(../img/portfolio/work2-min.png) no-repeat;
+}
+
+.box3 {
+    background: url(../img/portfolio/work3-min.png) no-repeat;
+}
+
+.box4 {
+    background: url(../img/portfolio/work4-min.png) no-repeat;
+}
+
+.box5 {
+    background: url(../img/portfolio/work5-min.png) no-repeat;
+}
+
+.box6 {
+    background: url(../img/portfolio/work6-min.png) no-repeat;
+}
+
+.box7 {
+    background: url(../img/portfolio/work7-min.png) no-repeat;
+}
+
+.box8 {
+    background: url(../img/portfolio/work8-min.png) no-repeat;
+}
+
+.box9 {
+    background: url(../img/portfolio/work9-min.png) no-repeat;
+}
+
+.box10 {
+    background: url(../img/portfolio/work10-min.png) no-repeat;
+}
+
+.box11 {
+    background: url(../img/portfolio/work11-min.png) no-repeat;
+}
+
+.box12 {
+    background: url(../img/portfolio/work12-min.png) no-repeat;
+}
+
+.box13 {
+    background: url(../img/portfolio/work13-min.png) no-repeat;
+}
+
+.box14 {
+    background: url(../img/portfolio/work14-min.png) no-repeat;
+}
+
+.box15 {
+    background: url(../img/portfolio/work15-min.png) no-repeat;
+}
+
+.box16 {
+    background: url(../img/portfolio/work16-min.png) no-repeat;
+}
+
+.box17 {
+    background: url(../img/portfolio/work17-min.png) no-repeat;
+}
+
+.box18 {
+    background: url(../img/portfolio/work18-min.png) no-repeat;
+}
+
+.box19 {
+    background: url(../img/portfolio/work19-min.png) no-repeat;
+}
+
+.box20 {
+    background: url(../img/portfolio/work20-min.png) no-repeat;
+}
+
+/* contact */
+.main-contact {
     font-size: 5rem;
 }
 
-.social {
+.social > * {
     color: #fff;
     cursor: pointer;
 } 
 /* Seguramente lo cambie cuando sepa qué agregar a whatsapp y email */
 
 .social:hover {
-    font-size: 6rem;
     transition: 100ms ease-in-out;
 }
 
-.instagram:hover {
-    color: #cf86ff;
+.instagram:hover a {
+    color: #ffd699;
 }
 
-.facebook:hover {
+.facebook:hover a {
     color: #6c9aff;
 }
 
-.whatsapp:hover {
+.whatsapp:hover i {
     color: #56ff94;
 }
 
-.email:hover {
-    color: #ff7366;
+.email:hover i {
+    color: #ff8c82;
 }
 
 /* Media queries */
 @media screen and (max-width: 1652px) {
-    .main-contacto {
+    .main-contact {
         font-size: 3.7rem;
-    }
-
-    .social:hover {
-        font-size: 5rem;
     }
 }
 
 @media screen and (max-width: 1322px) {
-    .main-contacto {
+    .main-contact {
         font-size: 3rem;
-    }
-
-    .social:hover {
-        font-size: 4.6rem;
     }
 }
 
@@ -112,12 +196,8 @@
     /* CONTACTO ES VERTICAL */
 }
 
-@media screen and (max-width: 476px) {
+@media screen and (max-width: 585px) {
     .main-li {
         font-size: 2.3rem;
-    }
-
-    .social:hover {
-        font-size: 3.8rem;
     }
 }

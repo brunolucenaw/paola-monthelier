@@ -7,39 +7,39 @@ document.addEventListener("DOMContentLoaded", () => {
     const mainLiList = Array.from(document.getElementsByClassName("main-li"));
     const mainPortfolio = document.getElementById("main-portfolio");
 
-    const contactoLeft = document.getElementById("main-contacto-left");
-    const contactoRight = document.getElementById("main-contacto-right");
-    const socialList = Array.from(document.getElementsByClassName("social-oculto"));
+    const contactLeft = document.getElementById("main-contact-left");
+    const contactRight = document.getElementById("main-contact-right");
+    const socialList = Array.from(document.getElementsByClassName("social-hidden"));
 
-    function removerPortfolio() {
+    function hidePortfolio() {
         mainPortfolio.style.opacity = "0";
         setTimeout(() => {
             mainPortfolio.classList.remove("main-portfolio");
-            mainPortfolio.classList.add("main-portfolio-oculto");
+            mainPortfolio.classList.add("main-portfolio-hidden");
         }, 250);
     }
 
-    function retraerContacto() {
-        contactoLeft.classList = "main-contacto-left-oculto";
-        contactoRight.classList = "main-contacto-right-oculto";
+    function hideContact() {
+        contactLeft.classList = "main-contact-left-hidden";
+        contactRight.classList = "main-contact-right-hidden";
         setTimeout(() => {
-            contactoLeft.style.display = "none";
-            contactoRight.style.display = "none";
+            contactLeft.style.display = "none";
+            contactRight.style.display = "none";
             socialList.forEach(social => {
                 social.classList.remove("social");
-                social.classList.add("social-oculto");
+                social.classList.add("social-hidden");
             });
         }, 150);
     }
 
-    function agrandarLogo() {
-        logo.style.height = "400px";
+    function enlargeLogo() {
+        logo.style.transform = "scale(1)";
         setTimeout(() => {
             logo.style.position = "static";
         }, 250);
     }
 
-    function expandirMainNav() {
+    function showMainNav() {
         mainNav.style.display = "block";
         setTimeout(() => mainNav.classList = "main-nav", 50);
         setTimeout(() => mainLiList.forEach(li => li.style.display = "block"), 150);
@@ -47,12 +47,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // expander main-nav
     logo.addEventListener("click", () => {
-        retraerContacto();
-        removerPortfolio();
-        agrandarLogo();
+        hideContact();
+        hidePortfolio();
+        enlargeLogo();
         setTimeout(() => {
             container.style.flexDirection = "column";
-            expandirMainNav();
+            showMainNav();
         }, 150);
     });
 });
