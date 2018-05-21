@@ -8,7 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const logo = document.getElementById("logo");
 
     const portfolioBoxes = Array.from(document.getElementsByClassName("portfolio-box"));
-    const portfolioImages = Array.from(document.getElementsByClassName("portfolio-img"));
+
+    const fullscreenContainer = document.getElementById("fullscreen-container");
+    const fullscreenImg = document.getElementById("fullscreen-img");
+    const closeButton = document.getElementById("close-btn");
 
     function removerElemento(elemento) {
         elemento.style += "; display: none;";
@@ -41,32 +44,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 600);
     });
 
-    function expandirImg() {
-
-    }
-
     // imagen pantalla completa
     portfolioBoxes.forEach(box => {
-        // const newBox = box.cloneNode(true);
-        // box.addEventListener("click", () => {
-        //     box.parentNode.insertBefore(newBox, box.nextSibling);
-        //     newBox.classList.remove("portfolio-box");
-        //     newBox.classList.add("portfolio-box-fullscreen");
-        // });
-        
-        // newBox.firstChild.addEventListener("click", e => {
-        //     if (newBox.classList.contains("portfolio-box-fullscreen")) {
-        //         container.addEventListener("click", e => {
-        //             if (e.target === newBox.firstChild) {
-        //                 if (newBox.style.display === "block") {
-        //                     newBox.style.display = "none";
-        //                     // COMO HACER QUE DESAPAREZCA??????????????????????
-        //                 }
-        //             }
-        //         });
-        //     }
-        // });
-
-        // new approach showing img inside div 
+        box.addEventListener("click", () => {
+            const imgToAdd = "img/portfolio/work" + box.classList.toString().substr(17) + ".jpg";
+            fullscreenImg.src = imgToAdd;
+            fullscreenContainer.style.display = "block";
+        });
     });
+
+    closeButton.addEventListener("click", () => {
+        fullscreenContainer.style.display = "none";
+    });
+
 });

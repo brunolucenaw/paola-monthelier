@@ -63,8 +63,26 @@
     box-shadow: inset 0 0 60px 10px #111;
 }
 
-.portfolio-box-fullscreen {
+.fullscreen-container {
     background: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio-img-fullscreen img {
+    border: 5px solid #fff;
+}
+
+.close-btn {
+    background: rgba(0, 0, 0, 0.8);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: rgb(107, 107, 107);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #fff;
 }
 
 .box1 {

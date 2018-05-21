@@ -66,23 +66,38 @@
     transition: 150ms ease-in-out;
 }
 
-.portfolio-box-fullscreen {
-    display: flex;
+.fullscreen-container {
+    display: none;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    padding: 1rem;
-    justify-content: center;
-    align-items: center;
+    padding: 3rem;
     position: absolute;
     z-index: 20;
     box-sizing: border-box;
 }
 
-.portfolio-box-fullscreen img {
+.portfolio-img-fullscreen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-img-fullscreen img {
     max-width: 100%;
     max-height: 100%;
+}
+
+.close-btn {
+    width: 2rem;
+    margin-top: 0.6rem;
+    padding: 0.1rem 0.1rem 0.3rem;
+    text-align: center;
+    transition: 100ms ease-in-out;
 }
 
 /* Contacto */
