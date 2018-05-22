@@ -32,8 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 150);
     }
 
-    function enlargeLogo() {
+    function rearrangeLogo() {
         logo.style.transform = "scale(1)";
+        logo.style.border = "none";
         setTimeout(() => {
             logo.style.position = "static";
         }, 250);
@@ -49,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
     logo.addEventListener("click", () => {
         hideContact();
         hidePortfolio();
-        enlargeLogo();
+        rearrangeLogo();
         setTimeout(() => {
             container.style.flexDirection = "column";
             showMainNav();

@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         retraerMainMav();
         setTimeout(() => {
             achicarLogo();
+            logo.style.border = "20px solid #111";
             setTimeout(() => {
                 logo.style.position = "absolute";
             }, 250);
