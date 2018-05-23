@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const contactLeft = document.getElementById("main-contact-left");
     const contactRight = document.getElementById("main-contact-right");
     const socialList = Array.from(document.getElementsByClassName("social-hidden"));
+    const whatsappPopup = document.getElementById("whatsapp-popup");
+    const emailPopup = document.getElementById("email-popup");
 
     function hidePortfolio() {
         mainPortfolio.style.opacity = "0";
@@ -29,6 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 social.classList.remove("social");
                 social.classList.add("social-hidden");
             });
+            whatsappPopup.style.display = "none";
+            emailPopup.style.display = "none";
         }, 150);
     }
 

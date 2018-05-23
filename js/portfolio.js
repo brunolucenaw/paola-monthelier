@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         retraerMainMav();
         setTimeout(() => {
             achicarLogo();
-            logo.style.border = "20px solid #111";
+            logo.style.border = "20px solid #222";
             setTimeout(() => {
                 logo.style.position = "absolute";
             }, 250);
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // imagen pantalla completa
     portfolioBoxes.forEach(box => {
         box.addEventListener("click", () => {
-            const imgToAdd = "img/portfolio/work" + box.classList.toString().substr(17) + ".jpg";
+            const imgToAdd = "assets/img/portfolio/work" + box.classList.toString().substr(17) + ".jpg";
             fullscreenImg.src = imgToAdd;
             fullscreenContainer.style.display = "block";
         });

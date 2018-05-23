@@ -8,7 +8,7 @@
 
 /* Showcase */
 .container {
-    background: url(../img/showcase.png);
+    background: url(../assets/img/showcase.png);
     background-size: cover;
     background-position: center;
 }
@@ -45,7 +45,7 @@
 
 .main-portfolio {
     /* background: #000; */
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.8);
     box-shadow: 1px 2px 9px 1px #000;
     transition: 300ms ease-in-out;
 }
@@ -85,99 +85,99 @@
 }
 
 .box1 {
-    background: url(../img/portfolio/work1-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work1-min.jpg) no-repeat;
 }
 
 .box2 {
-    background: url(../img/portfolio/work2-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work2-min.jpg) no-repeat;
 }
 
 .box3 {
-    background: url(../img/portfolio/work3-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work3-min.jpg) no-repeat;
 }
 
 .box4 {
-    background: url(../img/portfolio/work4-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work4-min.jpg) no-repeat;
 }
 
 .box5 {
-    background: url(../img/portfolio/work5-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work5-min.jpg) no-repeat;
 }
 
 .box6 {
-    background: url(../img/portfolio/work6-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work6-min.jpg) no-repeat;
 }
 
 .box7 {
-    background: url(../img/portfolio/work7-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work7-min.jpg) no-repeat;
 }
 
 .box8 {
-    background: url(../img/portfolio/work8-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work8-min.jpg) no-repeat;
 }
 
 .box9 {
-    background: url(../img/portfolio/work9-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work9-min.jpg) no-repeat;
 }
 
 .box10 {
-    background: url(../img/portfolio/work10-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work10-min.jpg) no-repeat;
 }
 
 .box11 {
-    background: url(../img/portfolio/work11-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work11-min.jpg) no-repeat;
 }
 
 .box12 {
-    background: url(../img/portfolio/work12-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work12-min.jpg) no-repeat;
 }
 
 .box13 {
-    background: url(../img/portfolio/work13-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work13-min.jpg) no-repeat;
 }
 
 .box14 {
-    background: url(../img/portfolio/work14-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work14-min.jpg) no-repeat;
 }
 
 .box15 {
-    background: url(../img/portfolio/work15-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work15-min.jpg) no-repeat;
 }
 
 .box16 {
-    background: url(../img/portfolio/work16-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work16-min.jpg) no-repeat;
 }
 
 .box17 {
-    background: url(../img/portfolio/work17-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work17-min.jpg) no-repeat;
 }
 
 .box18 {
-    background: url(../img/portfolio/work18-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work18-min.jpg) no-repeat;
 }
 
 .box19 {
-    background: url(../img/portfolio/work19-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work19-min.jpg) no-repeat;
 }
 
 .box20 {
-    background: url(../img/portfolio/work20-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work20-min.jpg) no-repeat;
 }
 
 .box21 {
-    background: url(../img/portfolio/work21-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work21-min.jpg) no-repeat;
 }
 
 .box22 {
-    background: url(../img/portfolio/work22-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work22-min.jpg) no-repeat;
 }
 
 .box23 {
-    background: url(../img/portfolio/work23-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work23-min.jpg) no-repeat;
 }
 
 .box24 {
-    background: url(../img/portfolio/work24-min.jpg) no-repeat;
+    background: url(../assets/img/portfolio/work24-min.jpg) no-repeat;
 }
 
 /* contact */
@@ -189,7 +189,6 @@
     color: #fff;
     cursor: pointer;
 } 
-/* Seguramente lo cambie cuando sepa qué agregar a whatsapp y email */
 
 .social:hover {
     transition: 100ms ease-in-out;
@@ -209,6 +208,28 @@
 
 .email:hover i {
     color: #ff8c82;
+}
+
+.contact-popup {
+    background: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 3%;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+}
+
+.whatsapp-popup {
+    background: #fff;
+    color: #2bdf6d;
+    border: 3.5px solid #2bdf6d;
+}
+
+.email-popup {
+    background: #fff;
+    color: #ff8c82;
+    border: 3.5px solid #ff8c82;
 }
 
 /* Media queries */
